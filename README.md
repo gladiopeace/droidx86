@@ -1,4 +1,5 @@
 how to run this container image
+
 first we build the image
 we navigate to the current dockerfile directory:
 cd webdroid

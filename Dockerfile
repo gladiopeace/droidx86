@@ -55,7 +55,7 @@ ADD *.sh /root/
 RUN  chmod +x /root/env.sh
 
 RUN /root/env.sh  >> /root/.bashrc
-
+##
 
 RUN mkdir /var/run/sshd && \
     echo "root:$ROOTPASSWORD" | chpasswd && \

@@ -32,7 +32,7 @@ sdk --all --filter  android-24,sys-img-x86-google_apis-24,build-tools=24.0.3,ext
 
 RUN echo "y"|  android update sdk --no-ui --filter  platform-tools,tools 
 
-RUN echo no | android create avd --target android-24 --abi google_apis/x86 --name avd1 --skin WXGA800-7in 
+#RUN echo no | android create avd --target android-24 --abi google_apis/x86 --name avd1 --skin WXGA800-7in 
 
 RUN mkdir /usr/local/android-sdk/tools/keymaps && \
 touch /usr/local/android-sdk/tools/keymaps/en-us
@@ -47,7 +47,7 @@ ln /usr/local/android-sdk/tools/qemu/linux-x86_64/qemu-system-i386 \
 
 RUN git clone https://github.com/kanaka/noVNC.git
 
-RUN echo "hw.keyboard=yes" >> /root/.android/avd/avd1.avd/config.ini
+#RUN echo "hw.keyboard=yes" >> /root/.android/avd/avd1.avd/config.ini
 
 #RUN android create avd -t android-24  -b x86 -d 28  -n avd1 -b x86 --force
 #RUN ln -s /usr/share/qemu/keymaps /usr/local/android-sdk/tools/lib/pc-bios/keymaps

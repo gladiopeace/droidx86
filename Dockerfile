@@ -34,10 +34,10 @@ RUN echo "y"|  android update sdk --no-ui --filter  platform-tools,tools
 
 #RUN echo no | android create avd --target android-24 --abi google_apis/x86 --name avd1 --skin WXGA800-7in 
 
-RUN mkdir /usr/local/android-sdk/tools/keymaps && \
+RUN mkdir -p /usr/local/android-sdk/tools/keymaps && \
 touch /usr/local/android-sdk/tools/keymaps/en-us
 
-RUN mkdir /usr/local/android-sdk/tools/lib/pc-bios/keymaps && \
+RUN mkdir -p /usr/local/android-sdk/tools/lib/pc-bios/keymaps && \
 touch /usr/local/android-sdk/tools/lib/pc-bios/keymaps/en-us
 
 RUN if [ ! -d /usr/local/android-sdk/tools/qemu/linux-x86 ] ;then \

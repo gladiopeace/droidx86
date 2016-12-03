@@ -41,7 +41,7 @@ RUN mkdir -p /usr/local/android-sdk/tools/lib/pc-bios/keymaps && \
 touch /usr/local/android-sdk/tools/lib/pc-bios/keymaps/en-us
 
 RUN if [ ! -d /usr/local/android-sdk/tools/qemu/linux-x86 ] ;then \
- mkdir /usr/local/android-sdk/tools/qemu/linux-x86 ;fi && \
+ mkdir -p  /usr/local/android-sdk/tools/qemu/linux-x86 ;fi && \
 ln /usr/local/android-sdk/tools/qemu/linux-x86_64/qemu-system-i386 \
 /usr/local/android-sdk/tools/qemu/linux-x86/qemu-system-i386
 

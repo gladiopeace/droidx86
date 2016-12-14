@@ -45,6 +45,7 @@ RUN if [ ! -d /usr/local/android-sdk/tools/qemu/linux-x86 ] ;then \
 ln /usr/local/android-sdk/tools/qemu/linux-x86_64/qemu-system-i386 \
 /usr/local/android-sdk/tools/qemu/linux-x86/qemu-system-i386
 
+
 RUN git clone https://github.com/kanaka/noVNC.git
 
 #RUN echo "hw.keyboard=yes" >> /root/.android/avd/avd1.avd/config.ini
